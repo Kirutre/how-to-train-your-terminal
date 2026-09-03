@@ -1,0 +1,843 @@
+{
+  "theme": "pkg/catppuccin-mocha/catppuccin-mocha",
+  "version": 2,
+  "lsp": {
+    "javascript": {
+      "command": "deno",
+      "enabled": true,
+      "args": ["lsp"],
+      "auto_start": true,
+      "initialization_options": {
+        "enable": true,
+        "lint": true
+      },
+      "process_limits": {
+        "max_memory_percent": 50,
+        "max_cpu_percent": 90,
+        "enabled": false
+      }
+    },
+    "typescript": {
+      "command": "deno",
+      "enabled": true,
+      "args": ["lsp"],
+      "auto_start": true,
+      "initialization_options": {
+        "enable": true,
+        "lint": true
+      },
+      "process_limits": {
+        "max_memory_percent": 50,
+        "max_cpu_percent": 90,
+        "enabled": false
+      }
+    },
+    "asm": [
+      {
+        "command": "asm-lsp",
+        "enabled": true,
+        "args": [],
+        "auto_start": false,
+        "root_markers": [".asm-lsp.toml", ".git"],
+        "except_features": ["diagnostics"],
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "astro": [
+      {
+        "command": "astro-ls",
+        "enabled": true,
+        "args": ["--stdio"],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "bash": [
+      {
+        "command": "bash-language-server",
+        "enabled": true,
+        "args": ["start"],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "c": [
+      {
+        "command": "clangd",
+        "enabled": true,
+        "args": [],
+        "auto_start": false,
+        "root_markers": ["compile_commands.json", "CMakeLists.txt", "Makefile", ".git"],
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "c3": [
+      {
+        "command": "c3lsp",
+        "enabled": true,
+        "args": [],
+        "auto_start": false,
+        "root_markers": ["project.json", ".git"],
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "clojure": [
+      {
+        "command": "clojure-lsp",
+        "enabled": true,
+        "args": [],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "cmake": [
+      {
+        "command": "cmake-language-server",
+        "enabled": true,
+        "args": [],
+        "auto_start": false,
+        "root_markers": ["CMakeLists.txt", ".git"],
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "cpp": [
+      {
+        "command": "clangd",
+        "enabled": true,
+        "args": [],
+        "auto_start": false,
+        "root_markers": ["compile_commands.json", "CMakeLists.txt", "Makefile", ".git"],
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "csharp": [
+      {
+        "command": "csharp-ls",
+        "enabled": true,
+        "args": [],
+        "auto_start": false,
+        "root_markers": ["*.csproj", "*.sln", ".git"],
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "css": [
+      {
+        "command": "vscode-css-language-server",
+        "enabled": true,
+        "args": ["--stdio"],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "dart": [
+      {
+        "command": "dart",
+        "enabled": true,
+        "args": ["language-server", "--protocol=lsp"],
+        "auto_start": false,
+        "root_markers": ["pubspec.yaml", ".git"],
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "elixir": [
+      {
+        "command": "elixir-ls",
+        "enabled": true,
+        "args": [],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "erlang": [
+      {
+        "command": "erlang_ls",
+        "enabled": true,
+        "args": [],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "fsharp": [
+      {
+        "command": "fsautocomplete",
+        "enabled": true,
+        "args": ["--adaptive-lsp-server-enabled"],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "gas": [
+      {
+        "command": "asm-lsp",
+        "enabled": true,
+        "args": [],
+        "auto_start": false,
+        "root_markers": [".asm-lsp.toml", ".git"],
+        "except_features": ["diagnostics"],
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "gdscript": [
+      {
+        "command": "nc",
+        "enabled": false,
+        "name": "Godot GDScript",
+        "args": ["127.0.0.1", "6005"],
+        "auto_start": false,
+        "root_markers": ["project.godot", ".git"],
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "gleam": [
+      {
+        "command": "gleam",
+        "enabled": true,
+        "args": ["lsp"],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "go": [
+      {
+        "command": "gopls",
+        "enabled": true,
+        "args": [],
+        "auto_start": false,
+        "root_markers": ["go.mod", "go.work", ".git"],
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "graphql": [
+      {
+        "command": "graphql-lsp",
+        "enabled": true,
+        "args": ["server", "-m", "stream"],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "haskell": [
+      {
+        "command": "haskell-language-server-wrapper",
+        "enabled": true,
+        "args": ["--lsp"],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "html": [
+      {
+        "command": "vscode-html-language-server",
+        "enabled": true,
+        "args": ["--stdio"],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "java": [
+      {
+        "command": "jdtls",
+        "enabled": true,
+        "args": [],
+        "auto_start": false,
+        "root_markers": ["pom.xml", "build.gradle", "build.gradle.kts", ".git"],
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "json": [
+      {
+        "command": "vscode-json-language-server",
+        "enabled": true,
+        "args": ["--stdio"],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "jsonc": [
+      {
+        "command": "vscode-json-language-server",
+        "enabled": true,
+        "args": ["--stdio"],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "julia": [
+      {
+        "command": "julia",
+        "enabled": true,
+        "args": ["--startup-file=no", "--history-file=no", "-e", "using LanguageServer; runserver()"],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "kotlin": [
+      {
+        "command": "kotlin-language-server",
+        "enabled": true,
+        "args": [],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "latex": [
+      {
+        "command": "texlab",
+        "enabled": true,
+        "args": [],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "lua": [
+      {
+        "command": "lua-language-server",
+        "enabled": true,
+        "args": [],
+        "auto_start": false,
+        "root_markers": [".luarc.json", ".luarc.jsonc", ".luacheckrc", ".stylua.toml", ".git"],
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "markdown": {
+      "enabled": true,
+      "auto_start": true,
+      "process_limits": {
+        "max_memory_percent": 50,
+        "max_cpu_percent": 90,
+        "enabled": false
+      }
+    },
+    "nim": [
+      {
+        "command": "nimlangserver",
+        "enabled": true,
+        "args": [],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "nix": [
+      {
+        "command": "nil",
+        "enabled": true,
+        "args": [],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "nushell": [
+      {
+        "command": "nu",
+        "enabled": true,
+        "args": ["--lsp"],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "ocaml": [
+      {
+        "command": "ocamllsp",
+        "enabled": true,
+        "args": [],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "odin": [
+      {
+        "command": "ols",
+        "enabled": true,
+        "args": [],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "perl": [
+      {
+        "command": "perlnavigator",
+        "enabled": true,
+        "args": ["--stdio"],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "php": [
+      {
+        "command": "phpactor",
+        "enabled": true,
+        "args": ["language-server"],
+        "auto_start": false,
+        "root_markers": ["composer.json", ".git"],
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "protobuf": [
+      {
+        "command": "buf",
+        "enabled": true,
+        "args": ["beta", "lsp"],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "python": {
+      "command": "pyright-langserver",
+      "enabled": true,
+      "args": ["--stdio"],
+      "auto_start": true,
+      "process_limits": {
+        "max_memory_percent": 50,
+        "max_cpu_percent": 90,
+        "enabled": false
+      }
+    },
+    "r": [
+      {
+        "command": "R",
+        "enabled": true,
+        "args": ["--vanilla", "-e", "languageserver::run()"],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "racket": [
+      {
+        "command": "racket-langserver",
+        "enabled": true,
+        "args": [],
+        "auto_start": false,
+        "root_markers": ["info.rkt", ".git"],
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "ruby": [
+      {
+        "command": "solargraph",
+        "enabled": true,
+        "args": ["stdio"],
+        "auto_start": false,
+        "root_markers": ["Gemfile", ".ruby-version", ".git"],
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "rust": {
+      "enabled": true,
+      "args": ["--log-file", "C:\\Users\\USUARIO\\.local\\state\\fresh\\logs\\lsp\\rust-analyzer-14272.log"],
+      "auto_start": true,
+      "process_limits": {
+        "max_memory_percent": 50,
+        "max_cpu_percent": 90,
+        "enabled": true
+      }
+    },
+    "scala": [
+      {
+        "command": "metals",
+        "enabled": true,
+        "args": [],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "slang": [
+      {
+        "command": "slangd",
+        "enabled": true,
+        "args": [],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "solidity": [
+      {
+        "command": "nomicfoundation-solidity-language-server",
+        "enabled": true,
+        "args": ["--stdio"],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "sql": [
+      {
+        "command": "sqls",
+        "enabled": true,
+        "args": [],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "svelte": [
+      {
+        "command": "svelteserver",
+        "enabled": true,
+        "args": ["--stdio"],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "swift": [
+      {
+        "command": "sourcekit-lsp",
+        "enabled": true,
+        "args": [],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "systemverilog": [
+      {
+        "command": "svls",
+        "enabled": true,
+        "args": [],
+        "auto_start": false,
+        "root_markers": [".svls.toml", ".git"],
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "tailwindcss": [
+      {
+        "command": "tailwindcss-language-server",
+        "enabled": true,
+        "args": ["--stdio"],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "templ": [
+      {
+        "command": "templ",
+        "enabled": true,
+        "args": ["lsp"],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "terraform": [
+      {
+        "command": "terraform-ls",
+        "enabled": true,
+        "args": ["serve"],
+        "auto_start": false,
+        "root_markers": ["*.tf", ".terraform", ".git"],
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "toml": [
+      {
+        "command": "taplo",
+        "enabled": true,
+        "args": ["lsp", "stdio"],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "typst": [
+      {
+        "command": "tinymist",
+        "enabled": true,
+        "args": [],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "verilog": [
+      {
+        "command": "svls",
+        "enabled": true,
+        "args": [],
+        "auto_start": false,
+        "root_markers": [".svls.toml", ".git"],
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "vue": [
+      {
+        "command": "vue-language-server",
+        "enabled": true,
+        "args": ["--stdio"],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "yaml": [
+      {
+        "command": "yaml-language-server",
+        "enabled": true,
+        "args": ["--stdio"],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ],
+    "zig": [
+      {
+        "command": "zls",
+        "enabled": true,
+        "args": [],
+        "auto_start": false,
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": false
+        }
+      }
+    ]
+  },
+  "plugins": {
+    "vi_mode": {
+      "enabled": true,
+      "settings": {
+        "autoStart": false,
+        "arrowKeys": true,
+        "searchWordUnderCursor": true
+      }
+    },
+    "orchestrator": {
+      "enabled": true,
+      "settings": {
+        "autoOpenDock": false,
+        "defaultView": "compact",
+        "showAllWorktrees": false,
+        "showEmptyWorkspaces": true
+      }
+    }
+  },
+  "editor": {
+    "mouse_hover_enabled": true,
+    "ensure_final_newline_on_save": true,
+    "diagnostics_inline_text": true,
+    "use_terminal_bg": true,
+    "auto_create_empty_buffer_on_last_buffer_close": false,
+    "status_bar": {
+      "right": ["{line_ending}", "{encoding}", "{language}", "{lsp}"],
+      "left": ["{clock}", "{git_statusbar:branch}", "{cursor:compact}"]
+    },
+    "completion_popup_auto_show": true,
+    "tab_size": 2,
+    "screensaver_enabled": true,
+    "show_tilde": true
+  },
+  "file_explorer": {
+    "show_hidden": true,
+    "show_gitignored": true
+  },
+  "file_browser": {
+    "show_hidden": true
+  }
+}

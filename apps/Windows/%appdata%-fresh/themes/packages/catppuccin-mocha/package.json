@@ -1,0 +1,14 @@
+{
+  "name": "catppuccin-mocha",
+  "version": "1.0.0",
+  "description": "Theme installed from https://raw.githubusercontent.com/milon/catppuccin-fresh/refs/heads/master/catppuccin-mocha.json",
+  "type": "theme",
+  "fresh": {
+    "themes": [
+      {
+        "file": "theme.json",
+        "name": "catppuccin-mocha"
+      }
+    ]
+  }
+}
