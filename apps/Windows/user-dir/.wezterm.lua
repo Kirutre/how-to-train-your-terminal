@@ -33,6 +33,20 @@ config.window_padding = {
 config.leader = { key = 'Space', mods = 'CTRL', timeout_milliseconds = 1000 }
 
 config.keys = {
+  -- Deactivate
+  {
+    key = 'RightArrow',
+    mods = 'CTRL | SHIFT',
+    action = wezterm.action.DisableDefaultAssignment
+  },
+  
+  {
+    key = 'LeftArrow',
+    mods = 'CTRL | SHIFT',
+    action = wezterm.action.DisableDefaultAssignment    
+  },
+
+  
   { -- Maximize Window
     key = 'z',
     mods = 'LEADER',
