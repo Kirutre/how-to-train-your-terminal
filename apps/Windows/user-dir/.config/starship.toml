@@ -1,7 +1,7 @@
 palette = 'custom_theme'
 
 
-format = "$username$directory$git_branch$character"
+format = "$username$directory$git_branch$python$character"
 
 [username]
 style_user = "blue"
@@ -11,13 +11,17 @@ show_always = true
 [directory]
 style = "bold pink"
 read_only = " "
-format = "[ ](blue)[$path]($style)[$read_only]($style)"
+format = "[$path]($style)[$read_only]($style)"
 truncation_length = 3
 
 [git_branch]
 symbol = " "
 style = "green"
 format = " [$symbol$branch]($style)"
+
+[python]
+style = 'teal'
+format = ' [$virtualenv]($style)'
 
 [character]
 success_symbol = "[ >](white)"
